@@ -1,0 +1,9 @@
+# dependencies added now
+/node_modules
+/package-lock.json
+/app/config
+/config/db.config.js
+/config/mongodb.config.js
+.DS_Store
+.env
+
