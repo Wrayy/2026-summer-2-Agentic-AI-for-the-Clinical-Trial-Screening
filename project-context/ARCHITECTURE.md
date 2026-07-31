@@ -80,7 +80,7 @@ Backend responsibilities:
 - Produce explanations and suggested actions.
 - Return ranked patient results to the frontend.
 
-Backend changes should be isolated and documented in `BACKEND_CHANGES.md`.
+Backend changes should be isolated and documented in the backend change record, which is available on request.
 
 ## Agent Architecture
 
@@ -308,7 +308,7 @@ Because the backend is copied rather than forked, backend changes may need to be
 To support future reintegration:
 
 - Keep backend changes isolated.
-- Track changed backend files in `BACKEND_CHANGES.md`.
+- Track every changed backend file in the backend change record.
 - Avoid unrelated backend refactoring.
 - Prefer new clinical trial matching modules over changes to shared core files.
 - Document new dependencies and environment variables.

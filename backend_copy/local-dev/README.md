@@ -128,4 +128,4 @@ All clinical-trial action/patient table names are now lowercase everywhere: `cli
 
 This matters. The copied backend originally used mixed casing (`ClinicalTrials_Actions` in code, lowercase elsewhere). On a normal Windows MySQL install that is harmless because `lower_case_table_names=1` makes table names case-insensitive. On Linux — including AWS RDS, where the production `PRD01` database runs — the default is `lower_case_table_names=0`, so table names are **case-sensitive** and the mixed-case queries fail with `ER_NO_SUCH_TABLE` against tables that plainly exist.
 
-That is exactly what broke trial creation, trial deletion, and supplemental-criteria saving against `PRD01` on 2026-07-28. Keep these names lowercase in both code and schema; do not reintroduce the mixed casing. See `project-context/DECISIONS.md` for the full write-up.
+That is exactly what broke trial creation, trial deletion, and supplemental-criteria saving against `PRD01` on 2026-07-28. Keep these names lowercase in both code and schema; do not reintroduce the mixed casing.

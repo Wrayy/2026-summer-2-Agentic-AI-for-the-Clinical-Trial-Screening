@@ -244,7 +244,7 @@ The backend will use a copied version of the existing e-Hospital backend from:
 
 https://github.com/ottawa-ehospital/E-react-node-backend
 
-Backend changes should be limited and tracked in `BACKEND_CHANGES.md` because they may need to be reintegrated into the original backend later.
+Backend changes should be limited and tracked in the backend change record, because they may need to be reintegrated into the original backend later.
 
 The backend should expose endpoints that support the agent workflow, likely including document upload/extraction, supplemental criteria extraction, deterministic matching, semantic comparison, eligibility scoring, explanation generation, and ranked patient retrieval.
 
@@ -284,7 +284,7 @@ The biggest product risk is allowing the AI workflow to become too vague. Each a
 
 The biggest clinical safety risk is treating an AI-generated eligibility score as a final decision instead of a screening aid.
 
-The biggest coordination risk is that different contributors may change the architecture inconsistently unless `PROJECT_BRIEF.md`, `API_CONTRACT.md`, `ARCHITECTURE.md`, and `BACKEND_CHANGES.md` stay updated.
+The biggest coordination risk is that different contributors may change the architecture inconsistently unless `PROJECT_BRIEF.md`, `API_CONTRACT.md`, `ARCHITECTURE.md`, and the backend change record stay updated.
 
 ## Recommended Project Principle
 
